@@ -14,6 +14,7 @@
 		BB14FF131FA330CA009C3379 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB14FF111FA330CA009C3379 /* LaunchScreen.storyboard */; };
 		BB14FF1E1FA330CA009C3379 /* HierarchicalSearchListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB14FF1D1FA330CA009C3379 /* HierarchicalSearchListTests.swift */; };
 		BB14FF291FA330CA009C3379 /* HierarchicalSearchListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB14FF281FA330CA009C3379 /* HierarchicalSearchListUITests.swift */; };
+		BB14FF371FA3338E009C3379 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB14FF361FA3338E009C3379 /* MockData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		BB14FF241FA330CA009C3379 /* HierarchicalSearchListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HierarchicalSearchListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB14FF281FA330CA009C3379 /* HierarchicalSearchListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HierarchicalSearchListUITests.swift; sourceTree = "<group>"; };
 		BB14FF2A1FA330CA009C3379 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB14FF361FA3338E009C3379 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				BB14FF081FA330CA009C3379 /* AppDelegate.swift */,
 				BB14FF0A1FA330CA009C3379 /* ViewController.swift */,
 				BB14FF0C1FA330CA009C3379 /* Main.storyboard */,
+				BB14FF361FA3338E009C3379 /* MockData.swift */,
 				BB14FF0F1FA330CA009C3379 /* Assets.xcassets */,
 				BB14FF111FA330CA009C3379 /* LaunchScreen.storyboard */,
 				BB14FF141FA330CA009C3379 /* Info.plist */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB14FF0B1FA330CA009C3379 /* ViewController.swift in Sources */,
+				BB14FF371FA3338E009C3379 /* MockData.swift in Sources */,
 				BB14FF091FA330CA009C3379 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
