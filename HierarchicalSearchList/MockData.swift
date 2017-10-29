@@ -8,20 +8,21 @@
 
 import Foundation
 
-let mockData: [[String: Any]] = [["id":1,"industry":"Technology", "skill": [
-    ["id":1,"name":"Packaged Foods", "subSkill": [
-        ["id":1,"name":"GSA Schedules"],
-        ["id":2,"name":"Affiliate Networks"]]
-    ],
-    ["id":2,"name":"EDP Services", "subSkill": [
-        ["id":5,"name":"Operational Efficiency"],
-        ["id":6,"name":"Xetra"]]
-    ],
-    ["id":3,"name":"Natural Gas Distribution", "subSkill": [
-        ["id":11,"name":"Cashiering"],
-        ["id":12,"name":"iReport"],
-        ["id":15,"name":"SnagIt"]]
-    ]]
+let mockData: [[String: Any]] = [
+    ["id":1,"industry":"Technology", "skill": [
+        ["id":1,"name":"Packaged Foods", "subSkill": [
+            ["id":1,"name":"GSA Schedules"],
+            ["id":2,"name":"Affiliate Networks"]]
+        ],
+        ["id":2,"name":"EDP Services", "subSkill": [
+            ["id":5,"name":"Operational Efficiency"],
+            ["id":6,"name":"Xetra"]]
+        ],
+        ["id":3,"name":"Natural Gas Distribution", "subSkill": [
+            ["id":11,"name":"Cashiering"],
+            ["id":12,"name":"iReport"],
+            ["id":15,"name":"SnagIt"]]
+        ]]
     ],
     ["id":2,"industry":"Consumer Services", "skill": [
         ["id":6,"name":"Computer peripheral equipment", "subSkill": [

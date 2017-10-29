@@ -24,16 +24,14 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        var skillCount = 0
-        for industry in allSkills {
-            let skillArray = industry["skill"] as! [[String: Any]]
-            skillCount += skillArray.count
-            for skill in skillArray {
-                let subSkillArray = skill["subSkill"] as! [[String: Any]]
-                skillCount += subSkillArray.count
-            }
+        
+        let skillArray = allSkills[section]["skill"] as! [[String: Any]]
+        var numberOfRows = skillArray.count // For second level section headers
+        for skill in skillArray {
+            let subSkill = skill["subSkill"] as! [[String: Any]]
+            numberOfRows = numberOfRows + subSkill.count // For actual table rows
         }
-        return skillCount
+        return numberOfRows
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -84,9 +82,10 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         let sectionItems = allSkills[indexPath.section]["skill"] as! [[String: Any]]
         var itemIndex = indexPath.row
         var subSectionIndex = 0
-        for i in 0 ..< sectionItems.count - 1 {
+        for i in 0 ..< sectionItems.count {
             itemIndex = itemIndex - 1
-            let subSectionItems = sectionItems[i]
+            let subSectionItems = sectionItems[i]["subSkill"] as! [[String: Any]]
+            print("sub section item", subSectionItems)
             if itemIndex < subSectionItems.count {
                 subSectionIndex = i
                 break
